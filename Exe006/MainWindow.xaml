@@ -1,0 +1,19 @@
+﻿<Window x:Class="Exe006.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exe006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10,10,0,-6" RenderTransformOrigin="0.482,0.506" HorizontalAlignment="Left" Width="790" Visibility="Visible">
+        <Label x:Name="label" Content="Em que ano você nasceu?" HorizontalAlignment="Left" Margin="57,53,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+        <TextBox x:Name="txtNascimento" HorizontalAlignment="Center" Margin="0,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" FontSize="22" Height="25" RenderTransformOrigin="0.487,0.201"/>
+        <Button x:Name="btn" Content="OK" HorizontalAlignment="Left" Margin="494,67,0,0" VerticalAlignment="Top" FontSize="22" Width="135" Click="btn_Click"/>
+        <StackPanel x:Name="panResultado" HorizontalAlignment="Left" Height="225" Margin="76,117,0,0" VerticalAlignment="Top" Width="370" Visibility="Hidden">
+            <Label x:Name="lblMsg1" Content="" FontSize="22"/>
+            <Label x:Name="lblMsg2" Content="" FontSize="22"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
